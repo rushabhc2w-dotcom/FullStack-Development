@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Innovators Summit 2026</h1>
+        <p>Join global industry leaders for a transformative event exploring next-generation technologies, hands-on workshops, and unparalleled networking opportunities.</p>
+    </header>
+    <section>
+      <img src="images/eventimg.avif" alt="Audience listening to a speaker at a professional tech conference banner" width="100%" max-width="800">
+    </section>
+    <section>
+        <p><a href="https://www.eventbrite.com/d/online/events/">For more inormation click here</a></p>
+    </section>
+    <h1>Event Registration</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text"  name= " email" id="name" placeholder="Enter name here..">
+        <br/>
+        <br/>
+        <label for="email">Enter Email ID :</label>
+        <input type="text"  name= "email" id="email" placeholder="Enter email here..">
+        <br/>
+        <br/>
+        <label for="PhoneNumber">Enter Phone NO :</label>
+        <input type="tel"  name= "PhoneNumber" id="email" placeholder="Enter Phone Number here..">
+        <br/>
+        <br/>
+        <label for="datepicker">Event Date</label>
+        <input type="date" id="datepicker">
+        <br/>
+        <br/>
+        <label for="counter">No. Of Participants</label>
+        <input type="number" name="counter" id="counter" min="0" max="200">
+        <br/>
+        <br/>
+        <fieldset>
+            <legend>Select Event Type</legend>
+            <div>
+                <input type="radio" id="eventType1" name="eventType" value="conference" checked />
+                <label for="eventType1">Conference</label>
+            </div>
+
+            <div>
+                <input type="radio" id="eventType2" name="eventType" value="workshop" />
+                <label for="eventType2">Workshop</label>
+            </div>
+
+            <div>
+                <input type="radio" id="eventType3" name="eventType" value="webinar" />
+                <label for="eventType3">Webinar</label>
+            </div>
+        </fieldset>
+        <br/>
+       <fieldset>
+            <legend>Registration Details</legend>
+
+            <!-- Activity Preferences Checkboxes -->
+            <fieldset>
+                <legend>Select Your Activity Preferences:</legend>
+            
+                <div>
+                    <input type="checkbox" id="networking" name="activities" value="networking">
+                    <label for="networking">Networking Sessions</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="keynote" name="activities" value="keynote">
+                    <label for="keynote">Keynote Speeches</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="hackathon" name="activities" value="hackathon">
+                    <label for="hackathon">Hackathon</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="panel" name="activities" value="panel">
+                    <label for="panel">Q&A Panel Discussions</label>
+                </div>
+            </fieldset>
+        </fieldset>
+        <div>
+            <input type="checkbox" id="T&C" name="activities" value="T&C">
+            <label for="T&C">Terms & Conditions.</label>
+        </div>
+
+    </form>
+</body>
+</html>

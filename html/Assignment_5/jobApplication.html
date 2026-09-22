@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>Job Application Form</legend>
+            <label for="name">Full Name:</label>
+            <input type="text"  name= " email" id="name" placeholder="Enter name here..">
+            <br/>
+            <br/>
+            <label for="email">Email ID :</label>
+            <input type="text"  name= "email" id="email" placeholder="Enter email here..">
+            <br/>
+            <br/>
+            <label for="PhoneNumber">Phone No.:</label>
+            <input type="tel"  name= "PhoneNumber" id="email" placeholder="Enter Phone Number here..">
+            <br/>
+            <br/>
+            <label for="datepicker">Date of Birth</label>
+            <input type="date" id="datepicker">
+            <br/>
+            <br/>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Satara">Satara</option>
+            </select>
+            <br/>
+            <label for="educationType">Highest Qualification</label>
+            <select name="educationType" id="educationType">
+                <option value="BE">BE</option>
+                <option value="10th">ME</option>
+                <option value="MBA">MBA</option>
+                <option value="MSC">MSC</option>
+                <option value="BSC">BSC</option>
+                <option value="12th">PHD</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Select Your Technical Skills:</legend>
+                
+                <div>
+                    <input type="checkbox" id="java" name="skills" value="java">
+                    <label for="java">Java</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="python" name="skills" value="python">
+                    <label for="python">Python</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="flutter" name="skills" value="flutter">
+                    <label for="flutter">Flutter</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="c++" name="skills" value="c++">
+                    <label for="c++">C++</label>
+                </div>
+            </fieldset>
+            <br>
+            <label for="fileselect1">Upload Resume</label>
+            <br>
+            <input type="file" name="fileselect1" id="fileselect1">
+            
+        </fieldset>
+        <br>
+        <button>Apply Now</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>
