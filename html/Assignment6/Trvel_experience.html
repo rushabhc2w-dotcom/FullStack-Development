@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+            <p>Discover beautiful destinations and unforgettable travel experiences.</p>
+        <nav>
+            <a href="#images">Images</a>
+            <a href="#audio">Audios</a>
+            <a href="#expVideos">experiance videos</a>
+            <a href="#ytvideos">Youtube travelling videos</a>
+            <a href="#map">Map</a>
+            <a href="#listofPlace">Places</a>
+            <a href="#table">Best time to visit</a>
+            <a href="#enquiry">Enquary</a>
+        </nav>
+    </header>
+    <main>
+        <!-- images section -->
+        <section id="images">
+            <h2>Destination You can visit</h2>
+            <div>
+                <h3>Varanasi,Uttar Pradesh</h3>
+                <img src="media/varanasi.jpg" alt="Spiritual Place" height="250" width="450">
+                <img src="media/andaman.jpeg" alt="beautiful Beach" height="250" width="450">
+                <img src="media/jaisalmer.jpeg" alt="The Golden City " height="250" width="450">
+            </div>
+        </section>
+        <!-- audio section -->
+        <section id="audio">
+            <h2>Travel Audio Guide</h2>
+
+            <p>Listen to our travel guide:</p>
+            <audio controls>
+                <source src="travel-guide.mp3" type="audio/mpeg">
+                
+            </audio>
+        </section>
+        <!-- experiance videos section -->
+        <section id="expVideos">
+            <h2>Travel Experience Video</h2>
+            <video src="media/beuty_of_india.mp4" controls height="450" width="250"></video>
+            <video src="media/train_exp.mp4" controls height="450" width="250"></video>
+            <video src="media/place.mp4" controls height="450" width="250"></video>
+        </section>
+        <!-- videos section -->
+        <section id="ytvideos">
+            <h2>Explore Travel on YouTube</h2>
+            <iframe src="https://www.youtube.com/embed/-pc8cTYXnYs" height="250" width="450"></iframe>
+            <iframe src="https://www.youtube.com/embed/qCcLus0yNSg" height="250" width="450"></iframe>
+            <iframe src="https://www.youtube.com/embed/GISoFxnbb7I" height="250" width="450"></iframe>
+        </section>
+        <!-- map section -->
+         <section id="map">
+            <h2>Map To SearchThe Destination</h2>
+
+            <iframe
+                src="https://www.google.com/maps?q=Gateway%20of%20India%20Mumbai&output=embed"
+                width="600"
+                height="400"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </section>
+        <!-- list of place section -->
+        <section id="listofPlace">
+            <h2>Top 5 Places to visit</h2>
+            <ol>
+                <li>The Taj Mahal in Agra</li>
+                <li>The royal palaces of Jaipur</li>
+                <li> The serene backwaters of Kerala</li>
+                <li>The spiritual hub of Varanasi</li>
+                <li>The mountain landscapes of Ladakh </li>
+            </ol>
+        </section>
+        <!-- table section -->
+        <section id="table">
+            <Table border="1">
+                <thead>
+                    <th>Place</th>
+                    <th>Best Time</th>
+                    <th>Days Required</th>
+                </thead>
+                 <tbody>
+                    <tr>
+                        <td> Taj Mahal (Agra)</td>
+                        <td>October to March</td>
+                        <td>1–2 days (Perfect for a quick weekend trip or stopover)
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kerala Backwaters</td>
+                        <td>September to March</td>
+                        <td>3–4 days (Ideal for a houseboat stay and exploring nearby towns)</td>
+                    </tr>
+                    <tr>
+                        <td>Ladakh (Jammu & Kashmir)</td>
+                        <td>May to September</td>
+                        <td>5–7 days (Crucial for acclimatization, high passes, and remote lakes)</td>
+                    </tr>
+                 </tbody>
+            </Table>
+
+        </section>
+        <!-- Travel Enquiry Form -->
+        <section id="enquiry">
+            <fieldset>
+                <form>
+                    <legend>Travel Enquiry Form</legend>
+                    <h2>Travel Enquiry Form</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <br><br>
+
+                    <label for="destination">Choose Destination:</label>
+                    <select id="destination" name="destination">
+                        <option>Kerala</option>
+                        <option>Goa</option>
+                        <option>Rajasthan</option>
+                        <option>Manali</option>
+                        <option>Agra</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="date">Travel Date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+                    <br><br>
+
+                    <input type="submit" value="Submit Enquiry">
+
+                </form>
+            </fieldset>
+            
+
+            
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Explore the World. All Rights Reserved.</p>
+    </footer>
+
+    </main>
+</body>
+</html>
