@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    /* https://grabient.com/_gLqgLqgPhf83gBkf-cf5cf5Wf4wgA3gDPf8O */
+
+background: linear-gradient(45deg, #8ec5fc 0.000%, #8dd3ff 25.000%, #a1d8ff 50.000%, #c1d2ff 75.000%, #e0c3ff 100.000%);
+
+}
+
+.navcontainer{
+    
+    width: 100vw;
+    /* background-color: rgb(110, 110, 163); */
+    background: #77d3f7;
+background: linear-gradient(90deg, rgba(119, 211, 247, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+     padding: 2rem;
+
+}
+#navlist{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    align-items: center;
+
+}
+#navLogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+
+}
+.footerBox{
+    background: #77d3f7;
+background: linear-gradient(90deg, rgba(119, 211, 247, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+    width: 100%;
+    color:azure;
+    text-align: center;
+    min-height: 40px;
+
+}
+.footerBox p{
+    color:azure;
+    font-size: 2rem;
+}
+.contentBox{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden; 
+     transition: all 0.3 linear 0s; 
+    box-shadow: 0px 0px 30px black; 
+    border-radius: 20px;
+}
+.rightBox img{
+    height:  400px;
+    width: 400px;
+    border-radius: 20px;
+    transition:all 0.6s linear 0s;
+
+
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+.ingBox{
+  font-size: 1.3rem;  
+}
+.recipeBox{
+    font-size: 1.1rem;
+    transition: all 0.3 linear 0s;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36,34,34,0.713);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    opacity: 0;
+    transition: all 0.3 linear 0s;
+
+
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    
+}
