@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+.college-name {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav {
+    position: static;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+        text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+.admission-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+
+.main-area {
+    display: flex;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.content {
+    width: 70%;
+    background-color: lightblue;
+    padding: 2em;
+}
+.content h2 {
+
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+    .content p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.section {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: lightyellow;
+    padding: 2em;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.sidebar ul {
+    margin-bottom: 2em;
+    padding-left: 1.5em;
+}
+
+.sidebar li {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.contact-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    background-color: green;
+    color: white;
+
+    padding: 1em;
+    border-radius: 50px;
+
+    text-decoration: none;
+}
