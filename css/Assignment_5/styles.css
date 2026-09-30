@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+/* navigation css */
+.navbar{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: static;
+    align-items: center;
+    color: white;
+    background-color: rgb(1, 1, 36);
+    
+}
+.logo img{
+    height: 3.3rem;
+    width: 7rem;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover {
+   transform: scale(1.1);
+   transition-duration: 200ms;
+   border: 0.2rem solid white;
+}
+.delivery{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.delivery span{
+font-size: 0.7rem;
+}
+.delivery strong {
+    font-size: 0.85rem;
+}
+.delivery:hover {
+    border: 1px solid white;
+    /* padding: 0.3rem; */
+}
+.type{
+    display: flex;
+    height: 45px;
+    
+    
+}
+.search-bar{
+    display: flex;
+    flex: 1;
+    height: 40px;
+    width: 200px;
+
+}
+.type select{
+    width:5rem;
+    border: 0.2rem solid rgb(243, 181, 67);
+    background-color:rgb(237, 237, 237);
+    border-radius: 0.4rem;
+    flex: 1;
+}
+.search-bar input{
+    flex: 1;
+    /* border: 0.1rem solid rgb(130, 129, 129); */
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+.search-button{
+    width: 50px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(226, 182, 100);
+    transition: bacground-color 0.3s;
+}
+.search-button:hover {
+    background-color: rgb(226, 182, 100);
+    border: 0.2rem solid whitesmoke;
+}
+.language {
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language:hover {
+    color: rgb(226, 182, 100);
+    border: 0.2rem solid white;
+}
+
+.signin,
+.returns {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin span,
+.returns span {
+    font-size: 0.7rem;
+}
+
+.signin strong,
+.returns strong {
+    font-size: 0.85rem;
+}
+
+.signin:hover,
+.returns:hover {
+    color: rgb(226, 182, 100);
+    border: 0.2rem solid white;
+}
+.cart {
+    font-size: 1.1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart:hover {
+    color: rgb(226, 182, 100);
+    transform: scale(1.05);
+    border: 0.2rem solid white;
+}
+
+/* header panel */
+.header-panel {
+    background-color: rgb(42, 41, 71);
+    min-height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.header-panel a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    padding: 0.7rem 0.5rem;
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+.header-panel a:hover {
+    color: rgb(226, 182, 100);
+    background-color: rgb(57, 99, 114);
+}
+/* hero section css */
+.hero {
+    min-height: 350px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("images/deals.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.hero-content button {
+    background-color: rgb(252, 166, 6);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.hero-content button:hover {
+    background-color: rgb(203, 133, 4);
+}
+
+/* category */
+.categories {
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.categories h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 22%;
+    min-width: 220px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.category-image {
+    height: 130px;
+    background-color: rgb(241, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.category-card p {
+    color: gray;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.category-card a {
+    color: rgb(6, 156, 154);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.category-card a:hover {
+    color: rgb(197, 115, 15);
+}
+
+/* media quary */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        padding: 0.6rem;
+    }
+    .logo {
+        font-size: 1.4rem;
+    }
+    .delivery,
+    .language,
+    .signin,
+    .returns {
+        font-size: 0.75rem;
+    }
+    .search-container {
+        order: 5;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .search-container input {
+        font-size: 0.85rem;
+    }
+    .search-button {
+        width: 45px;
+    }
+    .cart {
+        display: block;
+        font-size: 0.9rem;
+    }
+    .header-panel {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 0.3rem;
+        padding: 0 0.5rem;
+    }
+    .header-panel a {
+        font-size: 0.75rem;
+        padding: 0.7rem 0.4rem;
+    }
+    .hero {
+        min-height: 250px;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .category-card {
+        width: 45%;
+        min-width: 160px;
+    }
+
+}
