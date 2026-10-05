@@ -297,10 +297,11 @@ body {
     justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
     .search-container {
         gap: 1rem;
+        padding: 1rem;
     }
 
     .logo {
@@ -330,51 +331,35 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
-
     .search-container {
+        width: 100%;
         height: auto;
-
         flex-wrap: wrap;
-
         gap: 1rem;
+        padding: 1rem;
     }
-
     .logo {
         width: auto;
+        font-size: 26px;
     }
-
     .Shop {
         order: 3;
         width: 100%;
-
         justify-content: center;
     }
-
     .search-bar {
         order: 2;
-
         width: 100%;
         flex-basis: 100%;
     }
-
-    .cart-section {
-        margin-left: 55%;
-    }
-
     .hero-section {
         flex-direction: column;
-
         min-height: auto;
     }
-
     .hero-content {
         width: 100%;
-
         padding: 3rem 1.5rem 2rem;
-
         align-items: center;
-
         text-align: center;
     }
 
@@ -394,13 +379,9 @@ body {
 
     .hero-stats {
         width: 100%;
-
         justify-content: center;
-
         flex-wrap: wrap;
-
         gap: 1rem;
-
         margin-top: 2rem;
     }
 
@@ -421,6 +402,56 @@ body {
     .star-two {
         top: 120px;
         left: 8%;
+    }
+}
+@media screen and (max-width:425px) {
+    .search-container{
+        padding: 0.8rem;
+        gap: 0.8rem;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .cart-section{
+        margin-left: auto;
+        gap: 10px;
+    }
+    .cart-section img{
+        width: 22px;
+        height: 22px;
+    }
+    .shop{
+       gap: 0.8rem; 
+       font-size: 14px;
+    }
+    .search-bar{
+        height: 44px;
+    }
+    .search-bar input{
+        font-size: 14px;
+    }
+    .hero-content{
+        padding: 2.5rem 1rem 2rem;
+    }
+    .hero-content h1{
+        font-size: 2.1rem;
+    }
+    .hero-content > p{
+        font-size: 0.8rem;
+    }
+    .hero-image{
+        height: 305px;
+    }
+    .star-one{
+        top: 25px;
+        right: 8%;
+        font-size: 3rem;
+
+    }
+    .star-two{
+        top: 100px;
+        left: 8%;
+        font-size: 2rem;
     }
 }
 .brand-names{
@@ -1197,20 +1228,61 @@ ul{
     object-fit: contain;
     
 }
-@media screen and (max-width:650px) {
-    .footer{
+
+@media screen and (max-width: 1024px) {
+
+    .dress-style-section {
+        width: 95%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .newsletter-section {
+        margin: 25px;
+        padding: 45px 30px;
+    }
+
+    .left-section {
+        font-size: 34px;
+    }
+
+    .home-review-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .footer-top{
-        padding-left: 10rem;
+
+    .footer-top {
+        padding: 1.5rem;
     }
-    .footer-grid{
+
+    .footer-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: space-evenly;
+        gap: 2rem;
     }
-     .dress-style-section {
+
+    .dress-style-section {
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -1221,7 +1293,6 @@ ul{
     .dress-style-flex {
         display: flex;
         flex-direction: column;
-
         width: 100%;
         gap: 1rem;
     }
@@ -1229,8 +1300,8 @@ ul{
     .dress-style-row {
         display: flex;
         flex-direction: column;
-        margin-left: 55px;
-        width: 70%;
+        margin-left: 0;
+        width: 100%;
         gap: 1rem;
     }
 
@@ -1240,20 +1311,22 @@ ul{
     .party-card {
         width: 100%;
         height: 220px;
-        
-        
     }
-    .dress-card img{
-        display: flex;
-        object-fit: contain;
+
+    .dress-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    .review-section-heading{
+
+    .review-section-heading {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
         text-align: center;
     }
+
     .home-review-section {
         width: 100%;
         max-width: 400px;
@@ -1275,15 +1348,8 @@ ul{
         width: 100%;
         margin: 0 auto;
     }
-}
-@media screen and (max-width:650px) {
-    .footer-grid{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .footer-top{
-        padding:1.5rem;
-    }
-     .newsletter-section {
+
+    .newsletter-section {
         margin: 20px;
         padding: 35px 20px;
         height: auto;
@@ -1303,16 +1369,10 @@ ul{
         margin-left: 0;
     }
 
-    .right-section input {
-        width: 100%;
-    }
-
+    .right-section input,
     .Subscribe-button {
         width: 100%;
     }
-    
-}
-@media screen and (max-width: 650px) {
 
     .footer-copyright {
         flex-direction: column;
@@ -1322,5 +1382,112 @@ ul{
 
     .payment-partner {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer-top {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .footer-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .footer-links-list {
+        width: 100%;
+        gap: 0.8rem;
+    }
+
+    .footer-link {
+        font-size: 13px;
+    }
+
+    .footergrid-heading {
+        font-size: 14px;
+    }
+
+    .dress-style-section {
+        width: 94%;
+        padding: 1.5rem 0.8rem;
+        border-radius: 18px;
+    }
+
+    .dress-style-title {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .dress-style-row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .casual-card,
+    .gym-card,
+    .formal-card,
+    .party-card {
+        width: 100%;
+        height: 180px;
+    }
+
+    .dress-card h3 {
+        top: 15px;
+        left: 20px;
+        font-size: 1.5rem;
+    }
+
+    .newsletter-section {
+        margin: 15px;
+        padding: 30px 15px;
+        border-radius: 15px;
+        gap: 20px;
+    }
+
+    .left-section {
+        font-size: 24px;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .right-section input {
+        height: 45px;
+    }
+
+    .Subscribe-button {
+        height: 45px;
+    }
+
+    .home-review-section {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .home-review-card {
+        width: 92%;
+    }
+
+    .review-section-heading {
+        gap: 10px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+        padding: 1rem;
+    }
+
+    .payment-partner {
+        flex-wrap: wrap;
+        gap: 6px;
     }
 }

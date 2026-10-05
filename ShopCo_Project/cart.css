@@ -324,13 +324,15 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .cart-container {
+        width: 90%;
         margin: 40px auto;
     }
 
     .your-cart-details {
         flex-direction: column;
+        gap: 25px;
     }
 
     .left-cart-product,
@@ -339,10 +341,11 @@ body {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .search-container {
         height: auto;
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .logo {
@@ -440,7 +443,7 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     .cart-card {
         flex-wrap: wrap;
         gap: 10px;

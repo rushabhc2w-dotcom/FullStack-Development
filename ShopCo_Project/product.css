@@ -106,8 +106,6 @@ body{
     width: 24.71px;
     height: 24.71px;
     color: #FFC633;
-
-    
     opacity: 1;
 
 }
@@ -137,7 +135,6 @@ body{
     font-size: 16px;
     font-weight: 400; 
     color: #00000099;
-
     font-family: 'Satoshi' sans-serif;
 }
 .product-color{
@@ -184,41 +181,30 @@ body{
     color: white;
     background-color: #000000;
 }
-
-
 .add-to-cart {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-top: 20px;
 }
-
-
 .product-quantity {
     width: 170px;
     height: 52px;
-
     border-radius: 62px;
-
     background-color: #f0f0f0;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     flex-shrink: 0;
 }
 
 .quantity-btn {
     border: none;
     background: transparent;
-
     font-size: 24px;
     cursor: pointer;
-
     width: 35px;
     height: 35px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,15 +213,12 @@ body{
 .quantity-number {
     font-size: 16px;
     font-weight: 500;
-
     color: #000000;
 
 }
-
 .add-to-cart-button {
     flex: 1;
 }
-
 .add-to-cart-button button {
     width:400px;
     height: 52px;
@@ -272,7 +255,6 @@ body{
     font-size: 20px;
     color: #00000099;
     padding-bottom: 12px;
-
     line-height: 22px;
     letter-spacing: 0%;
 
@@ -293,11 +275,9 @@ body{
     width: 100%;
     max-width: 1240px;
     margin: 20px auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 48px;
 }
 
@@ -335,14 +315,10 @@ body{
 .Shop select {
     width: 120px;
     height: 48px;
-
     padding: 0 16px;
-
     border: none;
     border-radius: 62px;
-
     background-color: #f0f0f0;
-
     font-size: 14px;
     cursor: pointer;
 }
@@ -351,18 +327,13 @@ body{
 .write-riview button {
     width: 166px;
     height: 48px;
-
     border: none;
     border-radius: 62px;
-
     padding: 0 20px;
-
     background-color: #000;
     color: #fff;
-
     font-size: 14px;
     font-weight: 500;
-
     cursor: pointer;
 }
 
@@ -373,12 +344,9 @@ body{
 .product-review-card {
     width: 100%;
     max-width: 1240px;
-
     margin: 30px auto 0;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
@@ -386,16 +354,12 @@ body{
 .customer-review-card {
     position: relative;
     min-height: 190px;
-
     border: 1px solid #0000001a;
     border-radius: 20px;
-
     padding: 28px 32px;
-
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     box-sizing: border-box;
 }
 
@@ -403,12 +367,9 @@ body{
     position: absolute;
     top: 20px;
     right: 25px;
-
     font-size: 20px;
     font-weight: bold;
-
     color: #999;
-
     cursor: pointer;
     letter-spacing: 2px;
 }
@@ -420,7 +381,6 @@ body{
 }
 .customer-star_filled{
     display: flex;
-    
     gap: 3px;
     color: #ffc107;
     font-size: 20px;
@@ -503,66 +463,154 @@ body{
 }
 
 
-@media screen and (max-width: 650px) {
-    .product-details{
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
+@media screen and (max-width: 1024px) {
+
+    .category-container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .category-right-side {
+        width: 260px;
+        flex-shrink: 0;
+    }
+
+    .category-card-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .search-container {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo {
         width: auto;
     }
-    .product-right-side{
-        display: flex;
-        flex-direction: column;
+
+    .Shop {
+        order: 3;
+        width: 100%;
         justify-content: center;
-        width: auto;
+    }
+
+    .search-bar {
+        order: 2;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .cart-section {
+        margin-left: auto;
+    }
+
+    .category-navigation-bar {
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 15px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .category-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .category-right-side {
+        width: 100%;
+        height: auto;
+        min-height: 700px;
+    }
+
+    .category-left-side {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .category-card-section {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .payment-partner {
+        margin-left: 0;
+        justify-content: center;
     }
     .add-to-cart{
         display: flex;
         flex-direction: column;
+        
+    }
+    .add-to-cart button{
+        width: 180px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .category-navigation-bar {
+        margin: 12px 0;
+        padding: 0 10px;
     }
 
-    .allreview-count {
-        height: auto;
-
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 15px;
+    .category-navigation-bar p {
+        font-size: 14px;
     }
 
-    .review-heading {
-        justify-content: space-between;
+    .category-container {
+        padding: 0 10px;
     }
 
-    .write-riview {
-        width: 100%;
-        justify-content: space-between;
+    .category-right-side {
+        min-height: auto;
     }
 
-    .write-riview button {
-        width: 140px;
-    }
-
-    .Shop select {
-        width: 100px;
-    }
-
-    /*
-       On mobile:
-       2 columns → 1 column
-    */
-
-    .product-review-card {
+    .category-card-section {
         grid-template-columns: 1fr;
-
         gap: 15px;
-
-        padding: 0 15px;
     }
 
-    .customer-review-card {
-        min-height: 200px;
-
-        padding: 22px;
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .add-to-cart{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .add-to-cart button{
+        width: 120px;
     }
 }
