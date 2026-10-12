@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Smart Calculator</div>
+        <div class="nav-controls">
+            <button class="theme-toggle-btn" onclick="toggleTheme()" id="theme-btn">
+                <span class="icon"><img src="images/moon.png" alt="">Dark Mode</span>
+            </button>
+            <button class="history-toggle-btn" onclick="toggleHistoryPanel()">
+                <span class="icon">🕒</span>
+            </button>
+
+        </div>
+    </header>
+    <main class="main-container">
+        
+    <div class="app-content" id="app-container-wrapper">
+            <div class="calculator-card">
+                
+                <div class="display">
+                    <div id="history-display"></div>
+                    <div id="current-display">0</div>
+                </div>
+
+                <div class="grid-buttons">
+                    <button class="btn action" onclick="clearDisplay()">C</button>
+                    <button class="btn action" onclick="appendOperator('%')">%</button>
+                    <button class="btn action" onclick="deleteLast()">⌫</button>
+                    <button class="btn operator" onclick="appendOperator('/')">÷</button>
+
+                    <button class="btn" onclick="appendNumber('7')">7</button>
+                    <button class="btn" onclick="appendNumber('8')">8</button>
+                    <button class="btn" onclick="appendNumber('9')">9</button>
+                    <button class="btn operator" onclick="appendOperator('*')">×</button>
+
+                    <button class="btn" onclick="appendNumber('4')">4</button>
+                    <button class="btn" onclick="appendNumber('5')">5</button>
+                    <button class="btn" onclick="appendNumber('6')">6</button>
+                    <button class="btn operator" onclick="appendOperator('-')">-</button>
+
+                    <button class="btn" onclick="appendNumber('1')">1</button>
+                    <button class="btn" onclick="appendNumber('2')">2</button>
+                    <button class="btn" onclick="appendNumber('3')">3</button>
+                    <button class="btn operator" onclick="appendOperator('+')">+</button>
+
+                    <button class="btn zero" onclick="appendNumber('0')">0</button>
+                    <button class="btn" onclick="appendNumber('.')">.</button>
+                    <button class="btn equals" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <footer class="footer-info">
+                <span>© 2026 Smart Calculator</span>
+                <div class="links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Support</a>
+                </div>
+            </footer>
+        </div>
+
+        <div class="sidebar-drawer" id="history-drawer">
+            <div class="sidebar-header">
+                <h3>History</h3>
+                <button class="close-btn" onclick="toggleHistoryPanel()">x</button>
+            </div>
+            <div class="sidebar-content">
+                <ul id="history-items-list">
+                    <li>25 + 50<br><strong>75</strong></li>
+                    <li>100 / 4<br><strong>25</strong></li>
+                    <li>12 × 12<br><strong>144</strong></li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <button class="clear-btn" onclick="clearHistoryEntries()">
+                    Clear History
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
