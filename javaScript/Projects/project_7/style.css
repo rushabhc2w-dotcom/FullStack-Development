@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(63, 63, 237);
+}
+
+.container{
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    /* justify-content: center; */
+    /* gap: 2rem; */
+    align-self: center;
+    background-color: blue;
+    
+
+}
+.container h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#astroform{
+    width: px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0.5rem;
+    /* padding: 2rem; */
+    
+}
+
+#astroform input{
+    text-decoration: none;
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+}
+#astroform input[type="submit"] {
+    height: 35px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#astroform input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+.result {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: rgb(30, 148, 146);
+}
