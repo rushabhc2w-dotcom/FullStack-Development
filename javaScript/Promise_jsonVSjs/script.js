@@ -167,9 +167,13 @@ function pickupOrder(orderDetail){
     return new Promise((resolve,reject)=>{
         
         setTimeout(()=>{
+            if(Math.random()>0.05){
             console.log("I have picked up the order");
             orderDetail.received=true;
             resolve(orderDetail);
+            }else{
+                reject("Unable to rich resturant");
+            }
         },3000)
     })
 }
@@ -195,6 +199,9 @@ placeOrder(orderDetail)
 .then((orderDetail)=>{
     console.log(orderDetail);
 })
-.catch((e)=>{
-    console.log("Error:",error.message);
+.catch((error)=>{
+    console.log("Error:",error);
+})
+.finally(()=>{
+    console.log("I am doing cleanup");
 })
