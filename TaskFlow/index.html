@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>`
+ 
+    <header class="navbar">
+        <a href="#" class="brand">
+            <img src="images/logo.svg" alt="TaskFlow Logo">
+            <span>
+                <p><strong>TaskFlow</strong></p>
+                <small>Stay Productive</small>
+            </span>
+        </a>
+        <div class="brand-name">
+            
+        </div>
+
+        <div class="nav-actions">
+            <button class="icon-button" aria-label="Notifications">
+                <img src="images/bellicon.svg" alt="">
+            </button>
+
+            <button class="icon-button" aria-label="Settings">
+                <img src="images/setting-icon.svg" alt="">
+            </button>
+
+            <button class="profile-button" aria-label="Profile">
+                <img src="images/profilePic.svg" alt="John's profile">
+            </button>
+        </div>
+    </header>
+
+   
+    <main class="dashboard">
+
+        <section class="welcome-card">
+            <div class="welcome-top">
+                <div>
+                    <h1>Morning, John 👋</h1>
+                    <p>Here's a snapshot of your workspace today.</p>
+                </div>
+
+                <div class="welcome-actions">
+                    <input type="date" class="date-badge" id="current-date">
+                    <button class="primary-button" id="open-task-form">
+                        + New Task
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-container">
+            <div class="stat-card">
+                <article >
+                    <span>Total Tasks</span>
+                    <h2 id="total-count">0</h2>
+                </article>
+                <div class="total-task-img">
+                    <img src="images/totalTask.svg" alt="">
+                </div>
+            </div>
+
+            <div class="stat-card pending-stat">
+                <article >
+                    <span>Pending Tasks</span>
+                    <h2 id="pending-count">0</h2>
+                </article>
+                <div class="pending-task-img">
+                    <img src="images/pendingTask.svg" alt="">
+                </div>
+            </div>
+
+           <div class="stat-card completed-stat">
+                <article >
+                    <span>Completed Tasks</span>
+                    <h2 id="completed-count">0</h2>
+                </article>
+                <div class="completed-task-img">
+                    <img src="images/tick.svg" alt="">
+                </div>
+           </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="section-title">Active Tasks</h2>
+
+            <div id="empty-state" class="empty-state">
+                <h2>No tasks available. Create your first task.</h2>
+                <p class="empty-description">
+                    Your workspace is currently clean and quiet. Get started
+by adding a task to organize your day and boost your
+productivity.
+                </p>
+
+                <button class="secondary-add-button" id="empty-add-task">
+                    + Add New Task
+                </button>
+            </div>
+
+            <div id="task-list" class="task-list"></div>
+        </section>
+
+    </main>
+
+
+  
+    <dialog id="task-dialog" class="task-dialog">
+        <form id="task-form">
+            <div class="dialog-header">
+                <h2>Add New Task</h2>
+                <button type="button" id="close-task-form"
+                        class="close-button" aria-label="Close">×</button>
+            </div>
+
+            <label for="task-title">Task title</label>
+            <input id="task-title" type="text"
+                   placeholder="e.g. Design Homepage" required maxlength="100">
+
+            <label for="task-description">Description</label>
+            <textarea id="task-description"
+                      placeholder="Add some context..."></textarea>
+
+            
+            <label for="task-start-date">Start Date</label>
+            <input type="date" id="task-start-date" required>
+
+            <label for="task-due-date">Due Date</label>
+            <input type="date" id="task-due-date" required>
+
+
+            <div class="dialog-actions">
+                <button type="submit" class="primary-button">
+                    Add Task
+                </button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="delete-dialog" class="delete-dialog">
+        <div class="delete-dialog-content">
+            <div class="delete-icon">
+                <img src="images/deleteicon.png" alt="">
+            </div>
+            <h3>Are you suru want to delete this item?</h3>
+            <!-- <p id="delete-task-name">this task?</p> -->
+            <div class="delete-dialog-actions">
+                <button id="cancel-delete" type="button">Cancel</button>
+                <button id="confirm-delete" type="button">Yes, Delete</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
