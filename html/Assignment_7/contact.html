@@ -1,195 +1,179 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact & FAQ</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Grand Core2Dine Hotel</h1>
+      <h2>Contact & Frequently Asked Questions</h2>
+    </header>
 
-<header>
-    <h1>Grand Core2Dine Hotel</h1>
-    <h2>Contact & Frequently Asked Questions</h2>
-</header>
+    <nav>
+      <a href="index.html">Home</a> | <a href="room.html">Rooms</a> |
+      <a href="room-comparison.html">Comparison</a> |
+      <a href="booking.html">Booking</a> |
+      <a href="restaurant.html">Restaurant</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="facilities.html">Facilities</a> |
+      <a href="media.html">Media</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="room.html">Rooms</a> |
-    <a href="room-comparison.html">Comparison</a> |
-    <a href="booking.html">Booking</a> |
-    <a href="restaurant.html">Restaurant</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="facilities.html">Facilities</a> |
-    <a href="media.html">Media</a> |
-    <a href="contact.html">Contact</a>
-</nav>
+    <hr />
 
-<hr>
+    <main>
+      <section>
+        <h2>Contact Information</h2>
 
-<main>
+        <address>
+          Grand Core2Dine Hotel<br />
+          FC Road, Pune,<br />
+          Maharashtra, India<br /><br />
 
-<section>
+          Phone:
+          <a href="tel:+912012345678"> +91 20 1234 5678 </a>
+          <br />
 
-    <h2>Contact Information</h2>
+          Email:
+          <a href="mailto:info@grandcore2dine.com"> info@grandcore2dine.com </a>
+          <br />
 
-    <address>
-        Grand Core2Dine Hotel<br>
-        FC Road, Pune,<br>
-        Maharashtra, India<br><br>
+          Website:
+          <a href="https://www.example.com"> www.grandcore2dine.com </a>
+        </address>
+      </section>
 
-        Phone:
-        <a href="tel:+912012345678">
-            +91 20 1234 5678
-        </a>
-        <br>
+      <hr />
 
-        Email:
-        <a href="mailto:info@grandcore2dine.com">
-            info@grandcore2dine.com
-        </a>
-        <br>
+      <section>
+        <h2>Our Location</h2>
 
-        Website:
-        <a href="https://www.example.com">
-            www.grandcore2dine.com
-        </a>
-    </address>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30270.706368775394!2d73.82958079999999!3d18.4909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792998209974!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </section>
 
-</section>
+      <hr />
 
-<hr>
+      <section>
+        <h2>Contact Form</h2>
 
-<section>
-
-    <h2>Our Location</h2>
-
-    <iframe
-        src="https://www.google.com/maps?q=FC%20Road%20Pune&output=embed"
-        width="600"
-        height="400"
-        title="Grand Core2Dine Hotel Location">
-    </iframe>
-
-</section>
-
-<hr>
-
-<section>
-
-    <h2>Contact Form</h2>
-
-    <form>
-
-        <label for="name">Full Name:</label>
-        <input
+        <form>
+          <label for="name">Full Name:</label>
+          <input
             type="text"
             id="name"
             name="name"
             placeholder="Enter your name"
-            required>
+            required
+          />
 
-        <br><br>
+          <br /><br />
 
-        <label for="email">Email:</label>
-        <input
+          <label for="email">Email:</label>
+          <input
             type="email"
             id="email"
             name="email"
             placeholder="Enter your email"
-            required>
+            required
+          />
 
-        <br><br>
+          <br /><br />
 
-        <label for="phone">Phone:</label>
-        <input
+          <label for="phone">Phone:</label>
+          <input
             type="tel"
             id="phone"
             name="phone"
             placeholder="Enter phone number"
-            required>
+            required
+          />
 
-        <br><br>
+          <br /><br />
 
-        <label for="message">Message:</label>
-        <br>
+          <label for="message">Message:</label>
+          <br />
 
-        <textarea
+          <textarea
             id="message"
             name="message"
             rows="6"
             cols="50"
             placeholder="Enter your message"
-            required></textarea>
+            required
+          ></textarea>
 
-        <br><br>
+          <br /><br />
 
-        <input type="submit" value="Send Message">
-        <input type="reset" value="Reset">
+          <input type="submit" value="Send Message" />
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
 
-    </form>
+      <hr />
 
-</section>
+      <section>
+        <h2>Frequently Asked Questions</h2>
 
-<hr>
+        <details>
+          <summary>What is the check-in time?</summary>
+          <p>Check-in starts at 2:00 PM.</p>
+        </details>
 
-<section>
+        <details>
+          <summary>What is the check-out time?</summary>
+          <p>Check-out is at 11:00 AM.</p>
+        </details>
 
-    <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Does the hotel provide free Wi-Fi?</summary>
+          <p>Yes, free Wi-Fi is available throughout the hotel.</p>
+        </details>
 
-    <details>
-        <summary>What is the check-in time?</summary>
-        <p>Check-in starts at 2:00 PM.</p>
-    </details>
+        <details>
+          <summary>Is breakfast available?</summary>
+          <p>Yes, breakfast is available at our hotel restaurant.</p>
+        </details>
 
-    <details>
-        <summary>What is the check-out time?</summary>
-        <p>Check-out is at 11:00 AM.</p>
-    </details>
+        <details>
+          <summary>Does the hotel have parking?</summary>
+          <p>Yes, secure parking is available for guests.</p>
+        </details>
 
-    <details>
-        <summary>Does the hotel provide free Wi-Fi?</summary>
-        <p>Yes, free Wi-Fi is available throughout the hotel.</p>
-    </details>
+        <details>
+          <summary>Does the hotel provide airport pickup?</summary>
+          <p>Yes, airport pickup can be arranged on request.</p>
+        </details>
 
-    <details>
-        <summary>Is breakfast available?</summary>
-        <p>Yes, breakfast is available at our hotel restaurant.</p>
-    </details>
+        <details>
+          <summary>Is room service available?</summary>
+          <p>Yes, room service is available for hotel guests.</p>
+        </details>
 
-    <details>
-        <summary>Does the hotel have parking?</summary>
-        <p>Yes, secure parking is available for guests.</p>
-    </details>
+        <details>
+          <summary>Can I cancel my booking?</summary>
+          <p>
+            Booking cancellation depends on the booking terms selected during
+            reservation.
+          </p>
+        </details>
+      </section>
+    </main>
 
-    <details>
-        <summary>Does the hotel provide airport pickup?</summary>
-        <p>Yes, airport pickup can be arranged on request.</p>
-    </details>
-
-    <details>
-        <summary>Is room service available?</summary>
-        <p>Yes, room service is available for hotel guests.</p>
-    </details>
-
-    <details>
-        <summary>Can I cancel my booking?</summary>
-        <p>
-            Booking cancellation depends on the booking terms
-            selected during reservation.
-        </p>
-    </details>
-
-</section>
-
-</main>
-
-<footer>
-    <hr>
-    <p>&copy; 2026 Grand Core2Dine Hotel.</p>
-</footer>
-
-</body>
+    <footer>
+      <hr />
+      <p>&copy; 2026 Grand Core2Dine Hotel.</p>
+    </footer>
+  </body>
 </html>

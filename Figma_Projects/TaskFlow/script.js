@@ -278,9 +278,6 @@ document.addEventListener("DOMContentLoaded", () => {
             deleteButton.addEventListener("click", () => {
                 taskToDeleteId = task.id;
 
-                // deleteTaskName.textContent =
-                //     `"${task.title}"?`;
-
                 deleteDialog.showModal();
             });
 

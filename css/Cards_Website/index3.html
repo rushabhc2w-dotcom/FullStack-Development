@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+            }
+
+            .container {
+                width: 100%;
+                min-height: 100vh;
+
+                background: linear-gradient(
+                    180deg,
+                    #a9caff 0%,
+                    #b8cbff 16.667%,
+                    #d3cbff 33.333%,
+                    #f0c8f9 50%,
+                    #ffc5f1 66.667%,
+                    #ffc0ec 83.333%,
+                    #ffbaec 100%
+                );
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                width: 700px;
+                height: 400px;
+                background-color: white;
+                border-radius: 20px;
+
+                display: flex;
+                flex-direction: row;
+            
+                overflow: hidden;
+
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+            .rightBox{
+                width: 50%;
+                height: 100%;
+            }
+            .rightBox > img{
+                height: 100%;
+                width: 100%;
+                
+            }
+            .leftBox{
+                width: 50%;
+                height: 100%;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: purple;
+                color: white;
+
+            }
+            .heading h2{
+                font-size: 32px;
+                line-height: 1.2;
+            }
+            .paragraph{
+                margin-top: 25px;
+
+            }
+            .paragraph p{
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            .statBox{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+            }
+
+            .statBox h2 {
+                font-size: 22px;
+            }
+
+            .statBox p {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftBox">
+                <div class="heading">
+                    <h2>Get insights that help you business grow</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, omnis suscipit. Non, obcaecati. Iste, quae? Nihil officia velit nisi iusto!
+
+                    </p>
+                </div>
+                <div class="statBox">
+                    <div class="Box1">
+                        <h2>10K+</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="Box2">
+                        <h2>214</h2>
+                        <p>Paid Units</p>
+                    </div>
+                    <div class="Box3">
+                        <h2>12M+</h2>
+                        <p>
+                            Views
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <img src="images/dital.jpg" >
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

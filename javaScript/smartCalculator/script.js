@@ -1,6 +1,7 @@
 let currentInput ="0";
 let expression = "";
 let shouldResetDisplay = false;
+let currentTheme= "light";
 
 
 const currentDisplay = document.getElementById("current-display")
@@ -9,7 +10,7 @@ const historyItemsList = document.getElementById("history-items-list");
 
 function updateUIDisplay(){
     currentDisplay.innerText = currentInput;
-    historyDisplay.innertext = expression;
+    historyDisplay.innerText = expression;
 
 }
 function appendNumber(num){
@@ -94,10 +95,12 @@ function toggleTheme(){
     const themeText = document.getElementById("theme-text");
     const themeBtnIcon = document.querySelector("#theme-btn .icon");
      if (currentTheme === "light") {
+        currentTheme = "dark";
         htmlElement.setAttribute("data-theme", "dark");
         themeText.innerText = "Light Mode";
         themeBtnIcon.innerText = "☀️";
     } else {
+        currentTheme="light";
         htmlElement.setAttribute("data-theme", "light");
         themeText.innerText = "Dark Mode";
         themeBtnIcon.innerText = "🌙";

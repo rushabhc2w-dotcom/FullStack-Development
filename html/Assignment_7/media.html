@@ -1,89 +1,75 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Media</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Grand Core2Dine Hotel</h1>
+      <h2>Hotel Media</h2>
+    </header>
 
-<header>
-    <h1>Grand Core2Dine Hotel</h1>
-    <h2>Hotel Media</h2>
-</header>
+    <nav>
+      <a href="index.html">Home</a> | <a href="room.html">Rooms</a> |
+      <a href="room-comparison.html">Comparison</a> |
+      <a href="booking.html">Booking</a> |
+      <a href="restaurant.html">Restaurant</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="facilities.html">Facilities</a> |
+      <a href="media.html">Media</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="room.html">Rooms</a> |
-    <a href="room-comparison.html">Comparison</a> |
-    <a href="booking.html">Booking</a> |
-    <a href="restaurant.html">Restaurant</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="facilities.html">Facilities</a> |
-    <a href="media.html">Media</a> |
-    <a href="contact.html">Contact</a>
-</nav>
+    <hr />
 
-<hr>
+    <main>
+      <section>
+        <h2>Hotel Promotional Video</h2>
 
-<main>
+        <video width="600" controls>
+          <source src="video/promotion.mp4" type="video/mp4" />
 
-<section>
+          Your browser does not support the video element. Please download the
+          hotel promotional video to watch it.
+        </video>
+      </section>
 
-    <h2>Hotel Promotional Video</h2>
+      <hr />
 
-    <video width="600" controls>
+      <section>
+        <h2>Hotel Promotional Audio</h2>
 
-        <source src="video/promotion.mp4" type="video/mp4">
+        <audio controls>
+          <source src="audio/hotel-tour.mp3" type="audio/mpeg" />
 
-        Your browser does not support the video element.
-        Please download the hotel promotional video to watch it.
+          Your browser does not support the audio element. Please download the
+          hotel audio tour.
+        </audio>
+      </section>
 
-    </video>
+      <hr />
 
-</section>
+      <section>
+        <h2>Hotel Location</h2>
 
-<hr>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30270.706368775394!2d73.82958079999999!3d18.4909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1792998209974!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </section>
+    </main>
 
-<section>
-
-    <h2>Hotel Promotional Audio</h2>
-
-    <audio controls>
-
-        <source src="audio/hotel-tour.mp3" type="audio/mpeg">
-
-        Your browser does not support the audio element.
-        Please download the hotel audio tour.
-
-    </audio>
-
-</section>
-
-<hr>
-
-<section>
-
-    <h2>Hotel Location</h2>
-
-    <iframe
-        src="https://www.google.com/maps?q=Pune%20Maharashtra&output=embed"
-        width="600"
-        height="400"
-        title="Grand Core2Dine Hotel Location">
-    </iframe>
-
-</section>
-
-</main>
-
-<footer>
-    <hr>
-    <p>&copy; 2026 Grand Core2Dine Hotel.</p>
-</footer>
-
-</body>
+    <footer>
+      <hr />
+      <p>&copy; 2026 Grand Core2Dine Hotel.</p>
+    </footer>
+  </body>
 </html>
