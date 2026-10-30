@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Google+Sans+Flex&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pochaevsk&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -16,47 +23,56 @@
           </div>
         </div>
         <div class="nav-bar">
-          <a href="#">COLLECTION</a>
-          <a href="#">NEW ARRIVAL</a>
-          <a href="#">PERFORMANCE</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
+          <span>COLLECTION</span>
+          <span>NEW ARRIVAL</span>
+          <span>PERFORMANCE</span>
+          <span>ABOUT</span>
+          <span>CONTACT</span>
         </div>
-        <div class="search"><img src="assets/images/search.svg" alt="" /></div>
-        <div class="like">
-          <img src="assets/images/like.svg" alt="" />
-        </div>
-        <div class="cart">
-          <img src="assets/images/cart.svg" alt="" />
-        </div>
-        <div class="profile">
-          <img src="assets/images/profile.svg" alt="" />
+        <div class="search-section">
+          <div class="search">
+            <img src="assets/images/search.svg" alt="" />
+          </div>
+          <div class="like">
+            <img src="assets/images/like.svg" alt="" />
+          </div>
+          <div class="cart">
+            <img src="assets/images/cart.svg" alt="" />
+          </div>
+          <div class="profile">
+            <img src="assets/images/profile.svg" alt="" />
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="hero-section">
-        <img src="assets/images/heroimg.jpg" alt="" />
-        <div class="hero-heading-container">
-          <h1>EVERY STEP. EVERY VICTORY.</h1>
-          <div class="hero-desc">
-            <p>
-              Premium performance footwear engineered for speed, comfort, and
-              confidence. Experience the zenith of athletic engineering.
-            </p>
-            <button><a href="#">SHOP COLLECTION</a></button>
-            <button><a href="#">EXPLORE TECHNOLOGY</a></button>
+      <section class="hero-section">
+        <div class="hero-containt">
+          <img src="assets/images/heroimg.jpg" alt="" />
+          <div class="hero-heading-container">
+            <h1>EVERY STEP. EVERY VICTORY.</h1>
+            <div class="hero-desc">
+              <p>
+                Premium performance footwear engineered for speed, comfort, and
+                confidence. Experience the zenith of athletic engineering.
+              </p>
+              <div class="hero-button">
+                <button><a href="#">SHOP COLLECTION</a></button>
+                <button><a href="#">EXPLORE TECHNOLOGY</a></button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="featured-collection">
         <div class="top-text">
           <p>THE ELITE SERIES</p>
         </div>
         <div class="bottom-text">
           <p>FEATURED COLLECTION</p>
-          <span> View All &#8594; </span>
-        </div>
+          <span> View All <img src="assets/images/arrow.svg" alt="" /></span>
+          
+         
       </div>
       <section class="arrivals-section">
         <div class="new-arrivals-container">
@@ -88,17 +104,17 @@
               class="arrivals-images"
             />
             <div class="product-name">
-              <span>APEX AURA</span>
-              <p>$220</p>
+              <span>VELOCITY V1</span>
+              <p>$180</p>
             </div>
             <div class="star-rating">
               <span class="star_filled">&#9733;</span>
-              <p>4.9(128 reviews)</p>
+              <p>4.8(195 reviews)</p>
             </div>
             <div class="colors-panel">
-              <img src="assets/colors/black.svg" alt="" />
+              <img src="assets/colors/white.svg" alt="" />
               <img src="assets/colors/red.svg" alt="" />
-              <img src="assets/colors/yellow.svg" alt="" />
+              
             </div>
             <button>ADD TO BAG</button>
           </div>
@@ -109,32 +125,35 @@
               class="arrivals-images"
             />
             <div class="product-name">
-              <span>APEX AURA</span>
-              <p>$220</p>
+              <span>ASCEND X</span>
+              <p>$250</p>
             </div>
             <div class="star-rating">
               <span class="star_filled">&#9733;</span>
-              <p>4.9(128 reviews)</p>
+              <p>5.0(210 reviews)</p>
             </div>
             <div class="colors-panel">
               <img src="assets/colors/black.svg" alt="" />
-              <img src="assets/colors/red.svg" alt="" />
-              <img src="assets/colors/yellow.svg" alt="" />
+              <img src="assets/colors/grey.svg" alt="" />
+              
             </div>
             <button>ADD TO BAG</button>
           </div>
         </div>
       </section>
-      <section  class="performance-tech">
-        <div class="tech-container">
-          <div class="tech-title-container">
-            <h2>ENGINEERED EXCELLENCE</h2>
-          </div>
-          <div class="tech-desc-container">
-            <p>
-              Pushing the boundaries of what's possible in athletic performance
-              with cutting-edge materials and precision design.
-            </p>
+      <section class="performance-tech">
+        <div class="performance-tech-info-container">
+           <div class="performance-tech-title-container">
+          <div class="tech-container">
+            <div class="tech-title-container">
+              <h2>ENGINEERED EXCELLENCE</h2>
+            </div>
+            <div class="tech-desc-container">
+              <p>
+                Pushing the boundaries of what's possible in athletic performance
+                with cutting-edge materials and precision design.
+              </p>
+            </div>
           </div>
         </div>
         <div class="tech-card">
@@ -153,7 +172,7 @@
           </div>
           <!-- card-2 -->
           <div class="tech-card-info">
-            <div class="tech-img">
+            <div class="tech-img-red">
               <img src="assets/images/energy.svg" alt="" />
             </div>
             <h3>ENERGY RETURN</h3>
@@ -167,7 +186,7 @@
           <!-- card-3 -->
           <div class="tech-card-info">
             <div class="tech-img">
-              <img src="assets/images/wind.svg" alt="" />
+              <img src="assets/images/wind2.svg" alt="" />
             </div>
             <h3>BREATHABLE MESH</h3>
             <div class="tech-card-desc">
@@ -179,7 +198,7 @@
           </div>
           <!-- card-4 -->
           <div class="tech-card-info">
-            <div class="tech-img">
+            <div class="tech-img-red">
               <img src="assets/images/maxgrip.svg" alt="" />
             </div>
             <h3>MAXIMUM GRIP</h3>
@@ -191,8 +210,12 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <section class="limited-Edition-Banner">
+        <img src="assets/images/shoe.svg" alt="">
+        <div class="limited-Edition-Content">
+          <span>LIMITED RESERVE</span>
         <div class="limited-Edition-inner-container">
           <h2>THE AURUM SERIES</h2>
           <div class="limited-Edition-inner-desc">
@@ -204,21 +227,126 @@
           </div>
           <button>RESERVE NOW</button>
         </div>
+        </div>
       </section>
       <section class="brand-story-section">
-        <div class="brand-story-container">
-            <div class="brand-story-img">
-                <img src="assets/images/brand-story-img.svg" alt="">
-        
-            </div>
-            <div class="brand-storysideimg">
-                <span>15+</span>
-                <p>YEARS OF INNOVATION</p>
-            </div>
-            
+        <div class="brand-story-left">
+          <div class="brand-story-img">
+            <img src="assets/images/brand-story-img.svg" alt="" />
+          </div>
+          <div class="brand-storysideimg">
+            <span>15+</span>
+            <p>YEARS OF INNOVATION</p>
+          </div>
         </div>
-        
+        <div class="brand-story-right">
+          <h2>LEGACY OF PERFORMANCE</h2>
+          <div class="verticalBorder">
+            <div class="VBContainer1">
+              <div class="VBHeading">
+                <h2>2009: THE GENESIS</h2>
+                <div class="VBDescription">
+                  <p>
+                    Founded in a small lab in Italy with the simple goal of
+                    creating the world's most responsive sole technology.
+                  </p>
+                </div>
+                <img src="assets/images/brandSectionDot1.svg" alt="" />
+              </div>
+            </div>
+            <div class="VBContainer1">
+              <div class="VBHeading">
+                <h2>2016: WORLD RECORD</h2>
+                <div class="VBDescription">
+                  <p>
+                    Elite athletes wearing Apex Velocity set 3 international
+                    records, solidifying our place in the professional arena.
+                  </p>
+                </div>
+                <img src="assets/images/brandSectionDot2.svg" alt="" />
+              </div>
+            </div>
+            <div class="VBContainer1">
+              <div class="VBHeading">
+                <h2>TODAY: APEX ELITE</h2>
+                <div class="VBDescription">
+                  <p>
+                    The fusion of elite athletic engineering with high-fashion
+                    aesthetics. Performance without compromise.
+                  </p>
+                </div>
+                <img src="assets/images/brandSectionDot3.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-Cotainer">
+          <div class="footer-brand-info">
+            <div class="footer-brand-name">
+              <img src="assets/images/logo.jpg" alt="" />
+              <div>APEX ELITE</div>
+            </div>
+            <div class="footer-brand-desc">
+              pDefining the future of high-performance luxury footwear.
+              Engineered for those who lead.
+            </div>
+            <div class="footer-brand-share-sites">
+              <img src="assets/images/weblink.svg" alt="" />
+              <img src="assets/images/share.svg" alt="" />
+              <img src="assets/images/video.svg" alt="" />
+            </div>
+          </div>
+          <div class="footer-grid">
+            <!-- column 1 -->
+            <div class="footer-grid-column">
+              <div class="footer-grid-heading">SHOP</div>
+              <ul class="footer-links-list">
+                <li>
+                  <a href="#overview" class="footer-link">New Arrivals</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Best Sellers</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Elite Rewards</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Store Locator</a>
+                </li>
+              </ul>
+            </div>
+            <!-- column 2 -->
+            <div class="footer-grid-column">
+              <div class="footer-grid-heading">COMPANY</div>
+              <ul class="footer-links-list">
+                <li>
+                  <a href="#overview" class="footer-link">Sustainability</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Track Order</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#overview" class="footer-link">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-heading">NEWSLETTER</div>
+            <div class="footer-newsletter-desc">
+              pJoin the elite list for early access and exclusive releases.
+            </div>
+            <input type="email" placeholder="Email Address" />
+            <button>JOIN</button>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>© 2024 APEX ELITE FOOTWEAR. ALL RIGHTS RESERVED.</footer>
   </body>
 </html>
