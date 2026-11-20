@@ -36,9 +36,10 @@
           <div class="like">
             <img src="assets/images/like.svg" alt="" />
           </div>
-          <div class="cart">
-            <img src="assets/images/cart.svg" alt="" />
-          </div>
+          <a href="shoppingCart.html" class="cart">
+            <img src="assets/images/cart.svg" alt="Shopping Cart" />
+            <span id="header-cart-count" class="cart-count">0</span>
+          </a>
           <div class="profile">
             <img src="assets/images/profile.svg" alt="" />
           </div>
@@ -77,10 +78,13 @@
         <div class="new-arrivals-container">
           <!-- card-1 -->
           <div class="new-arrivals-card">
-            <img
-              src="assets/images/newArrivalshoe.svg"
-              class="arrivals-images"
-            />
+            <a href="productDetailPage.html?id=apex-aura">
+              <img
+                src="assets/images/newArrivalshoe.svg"
+                class="arrivals-images"
+                alt="APEX AURA"
+              />
+            </a>
             <div class="product-name">
               <span>APEX AURA</span>
               <p>$220</p>
@@ -94,14 +98,24 @@
               <img src="assets/colors/red.svg" alt="" />
               <img src="assets/colors/yellow.svg" alt="" />
             </div>
-            <button>ADD TO BAG</button>
+            <button
+              class="add-to-cart"
+              data-name="APEX AURA"
+              data-price="220"
+              data-image="assets/images/newArrivalshoe.svg"
+            >
+              ADD TO BAG
+            </button>
           </div>
           <!-- card-2 -->
           <div class="new-arrivals-card">
-            <img
-              src="assets/images/limitedEditionshoe.svg"
-              class="arrivals-images"
-            />
+            <a href="productDetailPage.html?id=velocity-v1">
+              <img
+                src="assets/images/limitedEditionshoe.svg"
+                class="arrivals-images"
+                alt="VELOCITY V1"
+              />
+            </a>
             <div class="product-name">
               <span>VELOCITY V1</span>
               <p>$180</p>
@@ -114,14 +128,24 @@
               <img src="assets/colors/white.svg" alt="" />
               <img src="assets/colors/red.svg" alt="" />
             </div>
-            <button>ADD TO BAG</button>
+            <button
+              class="add-to-cart"
+              data-name="VELOCITY V1"
+              data-price="180"
+              data-image="assets/images/limitedEditionshoe.svg"
+            >
+              ADD TO BAG
+            </button>
           </div>
           <!-- card-3 -->
           <div class="new-arrivals-card">
-            <img
-              src="assets/images/blackyellowshoe.svg"
-              class="arrivals-images"
-            />
+            <a href="productDetailPage.html?id=ascend-x">
+              <img
+                src="assets/images/blackyellowshoe.svg"
+                class="arrivals-images"
+                alt="ASCEND X"
+              />
+            </a>
             <div class="product-name">
               <span>ASCEND X</span>
               <p>$250</p>
@@ -134,7 +158,14 @@
               <img src="assets/colors/black.svg" alt="" />
               <img src="assets/colors/grey.svg" alt="" />
             </div>
-            <button>ADD TO BAG</button>
+            <button
+              class="add-to-cart"
+              data-name="ASCEND X"
+              data-price="250"
+              data-image="assets/images/blackyellowshoe.svg"
+            >
+              ADD TO BAG
+            </button>
           </div>
         </div>
       </section>
@@ -348,6 +379,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer-copyrights">© 2024 APEX ELITE FOOTWEAR. ALL RIGHTS RESERVED.</footer>
+    <footer class="footer-copyrights">
+      © 2024 APEX ELITE FOOTWEAR. ALL RIGHTS RESERVED.
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

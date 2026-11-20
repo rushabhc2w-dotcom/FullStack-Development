@@ -1,50 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APEX ELITE | Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="site-header">
       <div class="header-container">
-        <div class="logo">
-          <div class="logoname">
-            <strong>APEX ELITE</strong>
-          </div>
-        </div>
-        <div class="nav-bar">
-          <span>Performance</span>
-          <span>Limited</span>
-          <span>Technology</span>
-          <span>Heritage</span>
-          
-        </div>
-        <div class="search-section">
-          <div class="like">
-            <img src="assets/images/like.svg" alt="" />
-          </div>
-          <div class="cart">
-            <img src="assets/images/cart.svg" alt="" />
-          </div>
-          <div class="profile">
+        <a class="logo" href="#">
+          <strong>APEX ELITE</strong>
+        </a>
+
+        <nav class="nav-bar">
+          <a href="#">Performance</a>
+          <a href="#">Limited</a>
+          <a href="#">Technology</a>
+          <a href="#">Heritage</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#"><img src="assets/images/like.svg" alt="" /></a>
+
+          <a href="#" class="header-cart">
+            <img src="assets/images/cart.png" alt="" />
+            <span id="header-cart-count"> </span>
+          </a>
+
+          <a href="#">
             <img src="assets/images/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
+
     <main>
-        <div class="cart-heading-content">
-            <div class="navigation">
-                <p class="page-name">Home</p>
-                <p class="active-page-name">Cart</p>
+      <section class="cart-hero">
+        <div class="cart-container">
+          <div class="cart-background">
+            <img src="assets/images/cartBackground.png" alt="" />
+            <img src="assets/images/cartbackground2.svg" alt="" />
+          </div>
+
+          <div class="cart-heading-content">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a>
+              <span>›</span>
+              <span>Cart</span>
             </div>
+
             <div class="cart-heading-name">
-                <h2>SHOPPING CART</h2>
-                <p>2 items in youjr bag</p>
+              <h1>SHOPPING CART</h1>
+              <p>
+                <span id="cart-count"> </span>
+                Items in your bag
+              </p>
+              
             </div>
+          </div>
+
+          <div class="cart-grid-section">
+            <div class="cart-grid-left" id="cart-products"></div>
+
+            <aside class="order-summary">
+              <h2>ORDER SUMMARY</h2>
+
+              <div class="summary-lines">
+                <div class="summary-row">
+                  <span>Subtotal</span>
+                  <span id="subtotal">$625.00</span>
+                </div>
+
+                <div class="summary-row">
+                  <span>Standard Shipping</span>
+                  <span id="shipping">FREE</span>
+                </div>
+
+                <div class="summary-row">
+                  <span>Estimated Tax</span>
+                  <span id="tax">$51.50</span>
+                </div>
+              </div>
+
+              <div class="coupon-section">
+                <label for="coupon-code">PROMO CODE</label>
+
+                <div class="coupon-controls">
+                  <input
+                    type="text"
+                    id="coupon-code"
+                    placeholder="Enter code"
+                  />
+
+                  <button id="apply-coupon" type="button">APPLY</button>
+                </div>
+
+                <p id="coupon-message"></p>
+              </div>
+
+              <div class="grand-total">
+                <span>GRAND TOTAL</span>
+                <strong id="grand-total">$676.50</strong>
+              </div>
+
+              <button class="checkout-button" id="checkout-button">
+                PROCEED TO CHECKOUT →
+              </button>
+
+              <button class="continue-button" id="continue-shopping">
+                CONTINUE SHOPPING
+              </button>
+
+              <p id="cart-message"></p>
+
+              <div class="payment-icons">
+                <span><img src="assets/images/card.png" alt=""></span>
+                <span><img src="assets/images/wallet.png" alt=""></span>
+                <span><img src="assets/images/sym.png" alt=""></span>
+              </div>
+            </aside>
+          </div>
         </div>
-        
+      </section>
+
+      <section class="recommendations">
+        <div class="like-title">
+          <h2>YOU MAY ALSO LIKE</h2>
+
+          <div class="like-navigation">
+            <button id="prev-products">‹</button>
+            <button id="next-products">›</button>
+          </div>
+        </div>
+
+        <div class="like-cards-section" id="like-cards-section">
+          <article class="like-card" data-product-id="heritage-x90">
+            <div class="recommend-image">
+              <img src="assets/images/like-shoes-1.jpg" alt="HERITAGE X-90" />
+              <span class="product-tag">LIMITED</span>
+            </div>
+
+            <span>HERITAGE X-90</span>
+            <p>$210.00</p>
+          </article>
+
+          <article class="like-card" data-product-id="pulse-react">
+            <div class="recommend-image">
+              <img src="assets/images/like-shoes-2.jpg" alt="PULSE REACT" />
+            </div>
+
+            <span>PULSE REACT</span>
+            <p>$195.00</p>
+          </article>
+
+          <article class="like-card" data-product-id="aura-cloud">
+            <div class="recommend-image">
+              <img src="assets/images/like-shoes-3.jpg" alt="AURA CLOUD" />
+            </div>
+
+            <span>AURA CLOUD</span>
+            <p>$240.00</p>
+          </article>
+
+          <article class="like-card" data-product-id="apex-terrain-v2">
+            <div class="recommend-image">
+              <img src="assets/images/like-shoes-4.jpg" alt="APEX TERRAIN V2" />
+              <span class="product-tag new-tag">NEW</span>
+            </div>
+
+            <span>APEX TERRAIN V2</span>
+            <p>$225.00</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="footer-section">
+        <div class="footer-container">
+          <div class="footer-brand-info">
+            <div class="footer-brand-name">
+              <img src="assets/images/logo.jpg" alt="" />
+              <p>APEX ELITE</p>
+            </div>
+
+            <p class="footer-brand-desc">
+              Defining the peak of athletic innovation and luxury aesthetics
+              since 2024.
+            </p>
+
+            <div class="footer-social">
+              <img src="assets/images/weblink.svg" alt="" />
+              <img src="assets/images/chrome.png" alt="" />
+              <img src="assets/images/mail.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3>SUPPORT</h3>
+
+              <a href="#">Track Order</a>
+              <a href="#">Elite Rewards</a>
+              <a href="#">Store Locator</a>
+              <a href="#">Size Guide</a>
+            </div>
+
+            <div class="footer-column">
+              <h3>COMPANY</h3>
+
+              <a href="#">Sustainability</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3>NEWSLETTER</h3>
+
+            <p>Join the elite list for exclusive drops.</p>
+
+            <form class="newsletter-form">
+              <input type="email" placeholder="Email Address" required />
+
+              <button type="submit">JOIN</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="footer-copyrights">
+      © 2024 APEX ELITE FOOTWEAR. ALL RIGHTS RESERVED.
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
 </html>
