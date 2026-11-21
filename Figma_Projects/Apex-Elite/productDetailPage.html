@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details</title>
+
+    <link rel="stylesheet" href="productDetail.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                APEX ELITE
+            </a>
+            <nav class="nav-bar">
+                <a href="index.html">COLLECTION</a>
+                <a href="#">NEW ARRIVAL</a>
+                <a href="#">PERFORMANCE</a>
+                <a href="#">ABOUT</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#">
+                    <img src="assets/images/search.svg" alt="Search">
+                </a>
+                <a href="#">
+                    <img src="assets/images/like.svg" alt="Wishlist">
+                </a>
+                <a href="shoppingCart.html" class="header-cart">
+                    <img src="assets/images/cart.svg" alt="Cart">
+                    <span id="header-cart-count">0</span>
+                </a>
+                <a href="#">
+                    <img src="assets/images/profile.svg" alt="Profile">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="container-left-side">
+            <img id="product-image" src="" alt="Product">
+        </div>
+        <div class="container-right-side">
+            <div class="series-name">
+                <span id="product-series"></span>
+            </div>
+            <div class="product-name">
+                <h1 id="product-name"></h1>
+            </div>
+            <div class="product-price">
+                <p id="product-price"></p>
+            </div>
+            <div class="product-desc">
+                <p id="product-description"></p>
+            </div>
+            <div class="size-section">
+                <div class="size-heading">
+                    <span>SELECT SIZE (US MEN'S)</span>
+                    <span class="size-guide">SIZE GUIDE</span>
+                </div>
+                <div class="size-options">
+
+                    <button class="size-btn">7</button>
+                    <button class="size-btn">8</button>
+                    <button class="size-btn">9</button>
+                    <button class="size-btn active">10</button>
+                    <button class="size-btn">11</button>
+                    <button class="size-btn">12</button>
+                    <button class="size-btn">13</button>
+
+                </div>
+            </div>
+            <div class="product-buttons">
+                <button id="add-to-bag" class="add-to-bag">
+                    ADD TO BAG
+                </button>
+                <button id="find-store" class="find-store">
+                    FIND IN STORE
+                </button>
+            </div>
+            <div class="product-specifications">
+                <div>
+                    <span>CUSHION</span>
+                    <p>FIRM / RESPONSIVE</p>
+                </div>
+                <div>
+                    <span>SURFACE</span>
+                    <p>ALL-TERRAIN</p>
+                </div>
+                <div>
+                    <span>DROP</span>
+                    <p>8 MM</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="productDetail.js"></script>
+</body>
+</html>
